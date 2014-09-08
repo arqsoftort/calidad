@@ -12,6 +12,8 @@ public class CurrencyConverter {
     
     public static BigDecimal Convert(Currency from, Currency TO, String amount, String veryLongUnusedParameterThatYouShouldDelete) {
         
+        //TODO: initialize this variable
+        
         String SomeVariable;
         
         if (true) {
