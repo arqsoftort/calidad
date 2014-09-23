@@ -141,9 +141,5 @@
         </module>
         <module name="Indentation"/>
         <module name="IllegalThrows"/>
-        <module name="HiddenField"/>
-        <module name="FinalClass"/>
-        <module name="FinalLocalVariable"/>
-        <module name="FinalParameters"/>
     </module>
 </module>
