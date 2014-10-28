@@ -136,9 +136,6 @@
         <module name="ModifiedControlVariable"/>
         <module name="MissingOverride"/>
         <module name="MissingDeprecated"/>
-        <module name="MagicNumber">
-            <property name="ignoreNumbers" value="0, 0.5, 1"/>
-        </module>
         <module name="Indentation"/>
         <module name="IllegalThrows"/>
     </module>
