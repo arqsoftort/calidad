@@ -74,6 +74,8 @@ Para comprobar que el plugin haya quedado correctamente instalado, podemos volve
 
 ![netbeans plugins window](http://cl.ly/image/2Z3U2N2V2G0R/Image%202014-09-08%20at%2017%3A00%3A46.png)
 
+NOTA: Es conveniente trabajar con la última versión, que no necesariamente es la del screenshot.
+
 ###3. Agregar archivo de configuración de CheckStyle
 
 Luego de instalar CheckStyle, en las Preferencias de NetBeans, en la sección Miscellaneous, tenemos un nuevo tab para la configuración de CheckStyle.
