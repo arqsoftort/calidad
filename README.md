@@ -1,13 +1,13 @@
-#Laboratorio de Calidad de Código
+# Laboratorio de Calidad de Código
 
-##Objetivo
+## Objetivo
 En varias materias anteriores se incentivó a que la calidad del código sea cada vez mejor a medida que los alumnos avanzan en la carrera y en su experiencia en el desarrollo de software. Por lo tanto, es esperable que en Arquitectura de Software ya tengan incorporadas las buenas prácticas de la programación en general y por lo menos conocer un mínimo del estándar de codificación en Java.
 
 Dado que es un requerimiento para el obligatorio, este laboratorio explica cómo instalar una herramienta de análisis de calidad de código estático y poder encontrar y resolver fácilmente los defectos del código.
 
-##Introducción
+## Introducción
 
-###Estándares de Codificación en Java
+### Estándares de Codificación en Java
 
 Se sabe que el 80% del tiempo de vida de una aplicación es de mantenimiento y difícilmente este mantenimiento sea hecho por el autor del código original. Por lo tanto, la legibilidad del código (junto con muchos otros aspectos de diseño y arquitectura) ayuda a que este trabajo sea menos tedioso.
 
@@ -37,7 +37,7 @@ Por otro lado, el equipo de desarrollo de Java en Google publicó sus propias co
 
 Entonces, durante el curso y para la corrección del obligatorio, tomaremos ésta como la convención de codificación a respetar.
 
-###Herramientas de Análisis de Código
+### Herramientas de Análisis de Código
 
 El análisis estático de software es un tipo de análisis de software que se realiza sin ejecutar el programa (el análisis realizado sobre los programas en ejecución se conoce como análisis dinámico de software). El término se aplica generalmente a los análisis realizados por una herramienta automática, el análisis realizado por un humano es llamado comprensión de programas (o entendimiento de programas) como también revisión de código.
 
@@ -47,10 +47,10 @@ Existen [varias herramientas](http://es.wikipedia.org/wiki/Anexo:Herramientas_pa
 
 En este caso nos enfocaremos en [**CheckStyle**](http://checkstyle.sourceforge.net/), una herramienta especializada en Java y de [código abierto](https://github.com/checkstyle/checkstyle) que se integra a NetBeans como [plugin](http://www.sickboy.cz/checkstyle/download.html) y nos permite visualizar los defectos de manera cómoda y rápida. Además, la herramienta permite elegir cuáles reglas aplicar, por lo tanto se puede configurar para que respete el estándar de Google.
 
-##Ejemplo
+## Ejemplo
 En este ejemplo agregaramos CheckStyle con la configuración de Google a una aplicación en Java.
 
-###1. La aplicación
+### 1. La aplicación
 
 No es necesario crear una aplicación desde cero. El proyecto llamado `CalidadLab` en este repositorio es una aplicación con código de ejemplo que sirve para comprobar el funcionamiento correcto de CheckStyle. Por lo tanto, les recomendamos clonar el repositorio (repasar [Laboratorio de Git](https://github.com/arqsoftort/git)) y abrir el proyecto con NetBeans.
 
@@ -58,7 +58,7 @@ Al abrirlo, el código de la clase `CurrencyConverter` debería de esta manera:
 
 ![currency converter before checkstyle](http://cl.ly/image/3h18353f1U2K/Image%202014-09-08%20at%2017%3A10%3A14.png)
 
-###2. Agregar Plugin de CheckStyle a NetBeans
+### 2. Agregar Plugin de CheckStyle a NetBeans
 
 En la página oficial del [Plugin de CheckStyle](http://www.sickboy.cz/checkstyle/download.html) se puede obtener la URL para la instalación online del plugin o directamente descargar un archivo comprimido para instalarlo offline.
 
@@ -76,7 +76,7 @@ Para comprobar que el plugin haya quedado correctamente instalado, podemos volve
 
 NOTA: Es conveniente trabajar con la última versión, que no necesariamente es la del screenshot.
 
-###3. Agregar archivo de configuración de CheckStyle
+### 3. Agregar archivo de configuración de CheckStyle
 
 Luego de instalar CheckStyle, en las Preferencias de NetBeans, en la sección Miscellaneous, tenemos un nuevo tab para la configuración de CheckStyle.
 
@@ -88,13 +88,13 @@ Luego de agregarlo, la configuración debería quedar de esta manera:
 
 ![checkstyle config](http://cl.ly/image/1B0g1R1J1g0j/Image%202014-09-08%20at%2016%3A54%3A06.png)
 
-###4. Comprobar los nuevos warnings
+### 4. Comprobar los nuevos warnings
 
 Quizás luego de reiniciar NetBeans y/o compilar la aplicación, veremos el nuevo estado de la clase `CurrencyConverter` de esta manera:
 
 ![currency converter after checkstyle](http://cl.ly/image/2T1b2n0W2a3w/Image%202014-09-08%20at%2017%3A17%3A26.png)
 
-###4. Comprobar los Action Items
+### 5. Comprobar los Action Items
 
 En caso de que no esté abierta, para ver la ventana de Action Items se debe ir a Window -> Action Items.
 
@@ -106,7 +106,7 @@ Al principio, veremos algo como esto:
 
 Los defectos se pueden filtrar por clase, paquete o proyecto. Además, se pueden crear distintos filtros para enfocarse en determinados defectos a la vez. Pero se debe recordar que uno de los criterios de corrección del obligatorio tiene que ver con la cantidad de defectos detectados por CheckStyle. Por lo tanto, se aconseja tener siempre en cuenta esta ventana y no dejar todo para corregir al final.
 
-###5. Corregir defectos y comprobar que desaparezca el Action Item
+### 6. Corregir defectos y comprobar que desaparezca el Action Item
 
 Muchas veces la explicación sobre el defecto que aparece en el tooltip a la izquierda del código es suficiente. Por ejemplo:
 
@@ -116,7 +116,7 @@ En caso de necesitar más detalles, se recomienda consultar la [documentación o
 
 Si consideran que falta o sobra alguna regla o propiedad de las mismas, les pedimos que nos informen a través de la sección de [Issues](https://github.com/arqsoftort/calidad/issues) del repositorio y para que el cambio sea considerado.
 
-##Feedback
+## Feedback
 Por cualquier consulta sobre el laboratorio, pueden crear un [Issue](https://github.com/arqsoftort/calidad/issues) en la sección correspondiente y lo responderemos a la brevedad.
 
 Por aportes sobre el código o documentación, por favor realizar un [Pull Request](https://github.com/arqsoftort/calidad/pulls) para que podamos evaluarlo e incluirlo.
